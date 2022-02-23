@@ -26,6 +26,7 @@ For Send Grid you need the SendGrid key and a validated sender email.
 
 You can deploy the infrastructure needed for the sample in your Azure tenant, using the `deploy.ps1` script found in the `.deploy` folder.
 
+
 ```powershell
 ./deploy.ps1 `
   -AppNamePrefix "test-ns1" `
@@ -35,6 +36,8 @@ You can deploy the infrastructure needed for the sample in your Azure tenant, us
   -TwilioKey "<KEY>" `
   -TwilioPhoneNo "<PHONE (include the country code)" `
 ```
+
+* make sure to run `az login` before running the script
 
 To deploy the Azure functions code, you can use the `publish.ps1` script in the `.deploy` folder (or push from your favorite IDE)
 
